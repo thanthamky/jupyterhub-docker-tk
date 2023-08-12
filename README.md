@@ -9,6 +9,8 @@ To implement this project, clone the peoject and use docker compose to build up 
 ## Installation
 
 ```
+mkdir jupyterhub-docker-tk
+git clone https://github.com/thanthamky/jupyterhub-docker-tk.git jupyterhub-docker-tk
 docker-compose up -d --build
 ```
 
