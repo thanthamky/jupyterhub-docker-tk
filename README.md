@@ -24,6 +24,7 @@ go to your host with port 8000 (if you did not modify in docker-compose.yml)
 ```
 http://localhost:8000/
 ```
+
 and logging in using **admin** username with **change.it!** password. Then, your server will start
 
 ## Add new user
