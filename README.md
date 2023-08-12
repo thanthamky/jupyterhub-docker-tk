@@ -19,7 +19,7 @@ the jupyter hub server will expose at port 8000
 
 ## First meet
 
-go to your host with port 8000 (if you did not modify in docker-compose.yml) and logging in using **admin** username with **remember.change.it** password. Then, your server will start
+go to your host with port 8000 (if you did not modify in docker-compose.yml) and logging in using **admin** username with **change.it!** password. Then, your server will start
 
 ## Add new user
 Use your admin account and go to **Admin** menu in File > Control Hub Panel, click at Add user. Logging out from your admin account, and Log in to a new user name with default password **remember.change.it**. After that, go to user terminal (sh interface). type
