@@ -2,7 +2,7 @@ FROM ubuntu:22.10
 
 WORKDIR /app/analysis
 
-RUN apt-get upgrade -y && apt-get update -y && apt-get install -y python3-pip && pip3 install --upgrade pip
+RUN apt-get upgrade -y && apt-get update -y && apt-get install -y python3-pip && pip3 install --upgrade pip3
 RUN apt-get install npm nodejs -y && \
     npm install -g configurable-http-proxy && \
     pip3 install jupyterhub && \
