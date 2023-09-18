@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM nvidia/cuda:12.0.0-base-ubuntu22.04
 
 WORKDIR /app/analysis
 
@@ -10,6 +10,8 @@ RUN apt-get install npm nodejs -y && \
     pip3 install pandas scipy matplotlib && \
     pip3 install "dask[distributed,dataframe]" && \   
     pip3 install dask_labextension && \
+    pip3 install torch torchvision torchaudio && \
+    pip3 install tensorflow && \
     useradd admin && echo admin:change.it! | chpasswd && mkdir /home/admin && chown admin:admin /home/admin
 
 COPY ./jupyterhub_config.py /app/analysis/jupyterhub_config.py
