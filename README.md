@@ -6,6 +6,16 @@ This project modifies his project to upgrade based ubuntu version, python versio
 
 To implement this project, clone the peoject and use docker compose to build up and run server using this command
 
+## Prequisition
+
+- From fresh installtion of Ubuntu 22.04 install Nvidia CUDA support
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+
+- Install Nvidia-Docker support
+https://github.com/d1egoprog/docker-tensorflow-gpu-jupyter/tree/main/config-nvidia-ubuntu
+
+CUDA installation completion check by ```nvidia-smi```, information of youe GPU should be there
+
 ## Installation
 
 ```
