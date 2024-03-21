@@ -16,10 +16,10 @@ RUN apt-get install npm nodejs -y && \
     pip3 install tensorflow-gpu && \
     
     apt-get update && \
-    apt install file -y \
+    apt install file -y &&\
     apt --fix-broken install && \
     apt-get install gdal-bin --fix-missing && \
-    apt-get install libgdal-dev --fix-missing && \
+    apt-get install libgdal-dev --fix-missing \
     
     useradd admin && echo admin:change.it! | chpasswd && mkdir /home/admin && chown admin:admin /home/admin
 
