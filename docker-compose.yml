@@ -2,7 +2,7 @@ version: '3'
 services:
     jupyterhub:
         build: .
-        image: jupyterhub-new:1.0
+        image: jupyterhub-new:1.1
         restart: always
         ports:
             - "8000:8000"
