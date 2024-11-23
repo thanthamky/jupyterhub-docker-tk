@@ -1,4 +1,5 @@
-FROM nvidia/cuda:12.3.2-base-ubuntu22.04
+#FROM nvidia/cuda:12.3.2-base-ubuntu22.04
+FROM nvidia/cuda:12.6.1-base-ubuntu24.04
 
 WORKDIR /app/analysis
 
@@ -11,11 +12,11 @@ RUN apt-get install npm nodejs -y && \
     pip3 install pandas scipy matplotlib && \
     pip3 install "dask[distributed,dataframe]" && \   
     pip3 install dask_labextension && \
-    pip3 install torch torchvision torchaudio && \
-    pip3 install tensorflow && \
-    pip3 install tensorflow-gpu && \
+    pip3 install torch torchvision torchaudio #&& \
+    #pip3 install tensorflow && \
+    #pip3 install tensorflow-gpu && \
     
-    apt-get update && \
+    apt-get update -y && \
     apt install file -y &&\
     apt --fix-broken install && \
     apt-get install gdal-bin --fix-missing && \
