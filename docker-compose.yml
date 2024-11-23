@@ -7,7 +7,7 @@ services:
         ports:
             - "8000:8000"
         volumes:
-            - jupyterhub-user-data:/home
+            - jupyterhub-user-data:/
         deploy:
             resources:
                 reservations:
