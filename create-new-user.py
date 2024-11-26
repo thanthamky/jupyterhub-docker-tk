@@ -13,6 +13,6 @@ if __name__ == '__main__':
         default_password = 'remember.change.it'
 
     username = sys.argv[1]
-    os.system("useradd -p "+crypt.crypt(default_password,"22")+" -m "+username)
+    os.system("useradd -p "+crypt.crypt(default_password,"22")+" -m "+username+" -s /bin/bash")
 
 
